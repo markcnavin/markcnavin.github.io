@@ -1,0 +1,514 @@
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 17px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #2c2c2c;
+    background-color: #faf9f7;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #e0ddd8;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4a6e8a;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #4a6e8a;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+a:hover {
+    border-bottom-color: #4a6e8a;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #e0ddd8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: none;
+    padding: 1rem 0;
+}
+
+.nav-name:hover {
+    color: #4a6e8a;
+    border-bottom: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 0;
+}
+
+.nav-links a {
+    display: block;
+    padding: 1rem 1.1rem;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: #555;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #1a1a1a;
+    border-bottom-color: #4a6e8a;
+}
+
+.nav-links a.active {
+    color: #1a1a1a;
+    border-bottom-color: #4a6e8a;
+}
+
+/* Mobile hamburger */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #2c2c2c;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* ===== HERO / ABOUT HEADER ===== */
+.hero {
+    background: linear-gradient(135deg, #f0ece6 0%, #e8e4de 50%, #eae6e0 100%);
+    padding: 3rem 0 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-header {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    margin: 0;
+}
+
+.headshot {
+    width: 240px;
+    min-width: 240px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.about-intro h1 {
+    margin-bottom: 0.2rem;
+    font-size: 2.8rem;
+}
+
+.postnominals {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666;
+    letter-spacing: 0.04em;
+    margin-bottom: 0;
+}
+
+/* ===== LEAD STATEMENT ===== */
+.lead {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #2c2c2c;
+    margin: 2rem 0 1.5rem;
+}
+
+.roles-table,
+.credentials-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.roles-table td {
+    padding: 0.2rem 0;
+    font-size: 1rem;
+    vertical-align: top;
+    line-height: 1.45;
+}
+
+.roles-table .role {
+    font-weight: 600;
+    color: #1a1a1a;
+    padding-right: 1rem;
+    white-space: nowrap;
+}
+
+.roles-table .inst {
+    color: #666;
+}
+
+.credentials-table {
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.credentials-table td {
+    padding: 0.12rem 0;
+    font-size: 0.88rem;
+    color: #777;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.credentials-table td:first-child {
+    font-weight: 500;
+    color: #666;
+    padding-right: 1rem;
+    white-space: nowrap;
+}
+
+/* ===== RESEARCH PAGE ===== */
+.books {
+    display: flex;
+    gap: 2.5rem;
+    margin: 1.5rem 0 2.5rem;
+}
+
+.book {
+    display: flex;
+    gap: 1.25rem;
+    flex: 1;
+}
+
+.book img {
+    height: 200px;
+    width: auto;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.book img:hover {
+    transform: scale(1.03);
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-info .book-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+}
+
+.book-info .book-meta {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.research-area {
+    margin-bottom: 2.5rem;
+}
+
+.pub-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pub-list li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.pub-list li:last-child {
+    border-bottom: none;
+}
+
+.pub-title {
+    color: #1a1a1a;
+}
+
+.pub-meta {
+    color: #777;
+    font-size: 0.88rem;
+}
+
+/* ===== TEACHING PAGE ===== */
+.teaching-content p {
+    margin-bottom: 1rem;
+}
+
+/* ===== ENGAGEMENT PAGE ===== */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.media-card {
+    background: #fff;
+    border: 1px solid #e8e5e0;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+
+.media-card:hover {
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.media-card img {
+    width: 100%;
+    display: block;
+}
+
+.media-card .card-body {
+    padding: 1rem;
+}
+
+.media-card .card-title {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+}
+
+.media-card .card-meta {
+    font-size: 0.82rem;
+    color: #777;
+}
+
+.writing-list {
+    list-style: none;
+    padding: 0;
+}
+
+.writing-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+.writing-list li:last-child {
+    border-bottom: none;
+}
+
+.outlet-list {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ===== CV PAGE ===== */
+.cv-embed {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #e0ddd8;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+}
+
+.cv-download {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: #4a6e8a;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-bottom: none;
+    transition: background-color 0.2s;
+}
+
+.cv-download:hover {
+    background-color: #3d5d75;
+    border-bottom: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid #e0ddd8;
+    font-size: 0.88rem;
+    color: #888;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-contact a {
+    color: #4a6e8a;
+}
+
+.footer-profiles {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.footer-profiles a {
+    color: #999;
+    font-size: 0.82rem;
+    border-bottom: none;
+}
+
+.footer-profiles a:hover {
+    color: #4a6e8a;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        border-bottom: 1px solid #e0ddd8;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 0.9rem 1.5rem;
+        border-bottom: none;
+    }
+
+    .hero {
+        padding: 2rem 0 1.5rem;
+    }
+
+    .about-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .roles-table .role {
+        white-space: normal;
+    }
+
+    .roles-table td {
+        display: block;
+    }
+
+    .roles-table .inst {
+        padding-bottom: 0.4rem;
+    }
+
+    .credentials-table td:first-child {
+        white-space: normal;
+    }
+
+    .headshot {
+        width: 180px;
+        min-width: 180px;
+    }
+
+    .books {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ===== PAGE CONTENT SPACING ===== */
+.page-content {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
