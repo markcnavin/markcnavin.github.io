@@ -12,11 +12,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark C. Navin — Philosopher, Bioethicist, Nurse</title>
-    <meta name="description" content="Mark Navin (Mark C. Navin) is a philosopher, bioethicist, healthcare ethics consultant, and bedside nurse. Professor of Philosophy at Oakland University, clinical ethicist and nurse at Corewell Health. Author of Values and Vaccine Refusal and America's New Vaccine Wars.">
+    <meta name="description" content="Mark Navin (Mark C. Navin) is a philosopher, bioethicist, healthcare ethics consultant, and nurse. Professor and Chair of Philosophy at Oakland University. Author of Values and Vaccine Refusal and America's New Vaccine Wars. Available for talks at hospitals, medical schools, and conferences.">
     <link rel="canonical" href="https://markcnavin.com/">
     <!-- Open Graph -->
     <meta property="og:title" content="Mark C. Navin — Philosopher, Bioethicist, Nurse">
-    <meta property="og:description" content="Mark Navin is a philosopher, bioethicist, healthcare ethics consultant, and bedside nurse. Professor at Oakland University. Author of Values and Vaccine Refusal and America's New Vaccine Wars.">
+    <meta property="og:description" content="Mark Navin is a philosopher, bioethicist, healthcare ethics consultant, and nurse. Professor at Oakland University. Author of Values and Vaccine Refusal and America's New Vaccine Wars.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://markcnavin.com/">
     <meta property="og:image" content="https://markcnavin.com/images/headshot.jpg">
@@ -24,7 +24,7 @@
     <!-- Twitter/Bluesky card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Mark C. Navin — Philosopher, Bioethicist, Nurse">
-    <meta name="twitter:description" content="Mark Navin is a philosopher, bioethicist, healthcare ethics consultant, and bedside nurse. Professor at Oakland University. Author of Values and Vaccine Refusal and America's New Vaccine Wars.">
+    <meta name="twitter:description" content="Mark Navin is a philosopher, bioethicist, healthcare ethics consultant, and nurse. Professor at Oakland University. Author of Values and Vaccine Refusal and America's New Vaccine Wars.">
     <meta name="twitter:image" content="https://markcnavin.com/images/headshot.jpg">
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -35,7 +35,7 @@
       "alternateName": ["Mark Navin", "Mark Christopher Navin"],
       "url": "https://markcnavin.com",
       "image": "https://markcnavin.com/images/headshot.jpg",
-      "jobTitle": ["Professor of Philosophy", "Healthcare Ethics Consultant", "Clinical Nurse"],
+      "jobTitle": ["Professor of Philosophy", "Department Chair", "Healthcare Ethics Consultant"],
       "worksFor": [
         {
           "@type": "EducationalOrganization",
@@ -85,33 +85,52 @@
     </script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
     <div class="container">
-        <a href="/" class="nav-name">Mark C. Navin</a>
+        <a href="#about" class="nav-name">Mark C. Navin</a>
         <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links">
-            <li><a href="/" class="active">About</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="engagement.html">Engagement</a></li>
-            <li><a href="cv.html">CV</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speaking">Speaking</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#cv">CV</a></li>
         </ul>
     </div>
 </nav>
 
-<section class="hero">
+<section class="hero" id="about">
     <div class="container">
         <div class="about-header">
-            <img src="images/headshot.jpg" alt="Mark Navin" class="headshot">
+            <div class="headshot-frame">
+                <img src="images/headshot.jpg" alt="Mark Navin" class="headshot">
+            </div>
             <div class="about-intro">
                 <h1>Mark C. Navin</h1>
                 <p class="postnominals">PhD, BSN, RN, HEC-C</p>
+                <p class="summary-statement">Philosopher, bioethicist, healthcare ethics consultant, and nurse. I work at the intersection of moral philosophy, public health, and clinical practice.</p>
+                <div class="hero-positions">
+                    <div class="label">Current Positions</div>
+                    <ul>
+                        <li><span class="role">Professor of Philosophy and Department Chair</span><br><span class="inst">Oakland University</span></li>
+                        <li><span class="role">Lecturer, Foundational Medical Studies</span><br><span class="inst">Oakland University William Beaumont School of Medicine</span></li>
+                        <li><span class="role">Healthcare Ethics Consultant</span><br><span class="inst">Corewell Health William Beaumont University Hospital</span></li>
+                    </ul>
+                </div>
+                <div class="hero-degrees">
+                    <span class="label">Education</span>
+                    <ul>
+                        <li>PhD, <span class="inst">University of Pennsylvania</span></li>
+                        <li>BA, <span class="inst">Cornell University</span></li>
+                        <li>BSN, <span class="inst">Oakland University</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -119,25 +138,295 @@
 
 <main class="container page-content">
 
-    <p class="lead">I am a philosopher, bioethicist, healthcare ethics consultant, and nurse.</p>
+    <section class="about-bio">
+        <p>I work to bring philosophical inquiry to the practice of medicine, nursing, and public health. In addition to being a scholar, I am also a practicing healthcare ethics consultant. That work includes case consultation, ethics education, and policy development. I have led or served on institutional review boards, animal care and use committees, scarce-resource allocation committees, vaccine mandate exemption committees, and a hospital committee on therapeutic termination of pregnancy. More recently I completed a nursing degree, passed the NCLEX, and worked as a bedside nurse. I want to understand healthcare ethics from both inside and outside the system.</p>
 
-    <p>I am Professor of Philosophy and Department Chair at Oakland University, Lecturer in Foundational Medical Studies at the Oakland University William Beaumont School of Medicine, and both a Healthcare Ethics Consultant and Clinical Nurse at Corewell Health William Beaumont University Hospital. These roles inform each other and shape everything I do: my scholarship, my teaching, my clinical practice, and my service to institutions and communities.</p>
+        <p>My research focuses on vaccine ethics and policy, clinical ethics, and public health ethics. I have published two monographs, <em>Values and Vaccine Refusal</em> (Routledge, 2016) and <em>America's New Vaccine Wars</em> (Oxford University Press, 2023, with Katie Attwell), along with three edited volumes and nearly a hundred articles and book chapters. My work appears in journals including <em>JAMA</em>, <em>JAMA Pediatrics</em>, <em>Pediatrics</em>, <em>Milbank Quarterly</em>, <em>Hastings Center Report</em>, and the <em>American Journal of Bioethics</em>.</p>
 
-    <p>I have a PhD in philosophy from the University of Pennsylvania and a BSN from Oakland University. I am a certified Healthcare Ethics Consultant (HEC-C) and a licensed registered nurse in the state of Michigan.</p>
+        <p>My op-eds and essays have appeared in <em>The New York Times</em>, <em>Time</em>, <em>STAT</em>, <em>NBCNews</em>, and <em>The Conversation</em>. I have been interviewed by the <em>Washington Post</em>, <em>Vox</em>, NPR, CBC Radio, and outlets in Japan, Hong Kong, and Australia.</p>
+    </section>
 
-    <p>My work connects philosophical inquiry to the practical and embodied realities of medicine, nursing, and public health. After years of writing about bioethics, I wanted to test my ideas against the complexities that clinicians face every day. I became a practicing healthcare ethics consultant, doing case consultation, ethics education, policy development, and committee leadership at a large health system. More recently, I completed a nursing degree, passed the NCLEX, and began working as a bedside nurse. I wanted to understand healthcare ethics not just as a consultant who arrives when called, but as a clinician who works inside the system.</p>
+    <!-- ==================== SPEAKING & ENGAGEMENT ==================== -->
+    <section id="speaking">
+        <h2>Speaking &amp; Engagement</h2>
 
-    <p>My research focuses on vaccine ethics and policy, clinical ethics, and public health ethics. I have published two monographs, <em>Values and Vaccine Refusal</em> (Routledge, 2016) and <em>America's New Vaccine Wars</em> (Oxford University Press, 2023, with Katie Attwell), along with three edited volumes and nearly a hundred articles and book chapters. My work appears in journals including <em>JAMA</em>, <em>JAMA Pediatrics</em>, <em>Pediatrics</em>, <em>Milbank Quarterly</em>, <em>Hastings Center Report</em>, and the <em>American Journal of Bioethics</em>.</p>
+        <p class="availability">I am available to speak at conferences, grand rounds, colloquia, and other events. To inquire about a talk, please <a href="mailto:mark.c.navin@gmail.com">email me</a>.</p>
+
+        <h3>Topics</h3>
+
+        <div class="topic-group">
+            <p style="font-weight:600; color:#1f1a14; margin-bottom:0.4rem;">Vaccines and Immunization</p>
+            <ul class="topic-list">
+                <li>Vaccine mandates and exemption policy</li>
+                <li>Vaccine hesitancy, refusal, and the people behind it</li>
+                <li>Vaccine communication with skeptical patients and parents</li>
+            </ul>
+        </div>
+
+        <div class="topic-group">
+            <p style="font-weight:600; color:#1f1a14; margin-bottom:0.4rem;">Pediatric Ethics</p>
+            <ul class="topic-list">
+                <li>Pediatric assent and the role of children's preferences</li>
+                <li>When clinicians should override family decisions</li>
+                <li>Conflict between parents, between parents and clinicians, and between parents and adolescents</li>
+            </ul>
+        </div>
+
+        <div class="topic-group">
+            <p style="font-weight:600; color:#1f1a14; margin-bottom:0.4rem;">Clinical Ethics</p>
+            <ul class="topic-list">
+                <li>Treatment over patient objection</li>
+                <li>Surrogate decision-making for incapacitated adults</li>
+                <li>Conscientious objection by clinicians</li>
+                <li>Informed consent at the bedside</li>
+                <li>The work of clinical ethics consultation</li>
+            </ul>
+        </div>
+
+        <div class="topic-group">
+            <p style="font-weight:600; color:#1f1a14; margin-bottom:0.4rem;">Public Health Ethics</p>
+            <ul class="topic-list">
+                <li>The political philosophy of public health</li>
+                <li>Reciprocity, vulnerability, and obligations to the community</li>
+                <li>Scarce resource allocation (lessons from COVID and beyond)</li>
+                <li>Nudges, mandates, and the ethics of behavior change in public health</li>
+            </ul>
+        </div>
+
+        <div class="topic-group">
+            <p style="font-weight:600; color:#1f1a14; margin-bottom:0.4rem;">Nursing and Bedside Care</p>
+            <ul class="topic-list">
+                <li>The moral labor of nurses in informed consent</li>
+                <li>Philosophy at the bedside (a philosopher's nursing education)</li>
+                <li>Hierarchy, delegation, and moral responsibility on clinical teams</li>
+            </ul>
+        </div>
+
+        <div class="topic-group">
+            <p style="font-weight:600; color:#1f1a14; margin-bottom:0.4rem;">Bigger Picture</p>
+            <ul class="topic-list">
+                <li>The political-philosophy preconditions for ethical practice</li>
+                <li>Reflective equilibrium and clinical wisdom</li>
+                <li>How heterodox positions get marginalized in bioethics</li>
+            </ul>
+        </div>
+
+        <h3>Recorded Talks and Videos</h3>
+        <ul class="writing-list">
+            <li>
+                <a href="https://www.youtube.com/watch?v=HvRuu9E6OJQ&t=1s" target="_blank" rel="noopener">"Pediatricians as Public Health Enforcers? Ethics and Politics in the Era of Vaccine Refusal"</a>
+                <span class="pub-meta"> — Seattle Children's Hospital, Ethics Grand Rounds.</span>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=Ulrll1knstg" target="_blank" rel="noopener">"Treatment Over Objection — Moral Reasons for Reluctance"</a>
+                <span class="pub-meta"> — Mayo Clinic Proceedings video.</span>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=YJ35iVTdbrA" target="_blank" rel="noopener">"The Ethics of Mandatory Vaccination"</a>
+                <span class="pub-meta"> — Vaccines Today.</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ==================== RESEARCH ==================== -->
+    <section id="research">
+        <h2>Research</h2>
+
+        <h3>Books</h3>
+        <div class="books">
+            <div class="book">
+                <a href="https://global.oup.com/academic/product/americas-new-vaccine-wars-9780197613238" target="_blank" rel="noopener">
+                    <img src="images/americas-vaccine-wars-cover.jpg" alt="America's New Vaccine Wars book cover">
+                </a>
+                <div class="book-info">
+                    <span class="book-title">America's New Vaccine Wars: California and the Politics of Mandates</span>
+                    <span class="book-meta">With Katie Attwell<br>Oxford University Press, 2023</span>
+                </div>
+            </div>
+            <div class="book">
+                <a href="https://www.routledge.com/Values-and-Vaccine-Refusal-Hard-Questions-in-Ethics-Epistemology-and-Health-Care/Navin/p/book/9781138478213" target="_blank" rel="noopener">
+                    <img src="images/values-vaccine-refusal-cover.jpg" alt="Values and Vaccine Refusal book cover">
+                </a>
+                <div class="book-info">
+                    <span class="book-title">Values and Vaccine Refusal: Hard Questions in Ethics, Epistemology, and Health Care</span>
+                    <span class="book-meta">Routledge, 2016</span>
+                </div>
+            </div>
+        </div>
+
+        <h3>Selected Journal Articles</h3>
+        <p style="font-size:0.92rem; color:#6a5238; margin-top:-0.25rem;">Filter by area, or see my <a href="#cv">CV</a> for a complete list.</p>
+
+        <div class="pub-filters" role="tablist" aria-label="Filter publications by area">
+            <button class="pub-filter is-active" data-cat="all">All</button>
+            <button class="pub-filter" data-cat="vaccine">Vaccine Ethics &amp; Policy</button>
+            <button class="pub-filter" data-cat="clinical">Clinical Ethics</button>
+            <button class="pub-filter" data-cat="phil">Philosophy of Public Health</button>
+            <button class="pub-filter" data-cat="nursing">Nursing Ethics</button>
+            <button class="pub-filter" data-cat="political">Political Philosophy</button>
+        </div>
+
+        <ul class="pub-list" id="pub-list">
+            <li data-cat="vaccine">
+                <span class="pub-title"><a href="https://doi.org/10.1001/jamapediatrics.2025.5290" target="_blank" rel="noopener">"Vaccine Policy and Eliminating Nonmedical Exemptions — Read the Room"</a></span>
+                <span class="pub-cat">Vaccine</span><br>
+                <span class="pub-meta">With Diekema. <em>JAMA Pediatrics</em>, 2026.</span>
+            </li>
+            <li data-cat="vaccine">
+                <span class="pub-title"><a href="https://doi.org/10.1001/jama.2025.19088" target="_blank" rel="noopener">"America's Vaccine Policy Whiplash — Finding the Way Forward"</a></span>
+                <span class="pub-cat">Vaccine</span><br>
+                <span class="pub-meta">With Ross. <em>JAMA</em>, 2025.</span>
+            </li>
+            <li data-cat="vaccine">
+                <span class="pub-title"><a href="https://doi.org/10.1111/petr.70019" target="_blank" rel="noopener">"No Vaccine, No Organ? Ethics of Vaccine Mandates for Pediatric Transplant"</a></span>
+                <span class="pub-cat">Vaccine</span><br>
+                <span class="pub-meta">With Wightman, Ross. <em>Pediatric Transplantation</em>, 2025.</span>
+            </li>
+            <li data-cat="vaccine">
+                <span class="pub-title"><a href="https://doi.org/10.1080/14760584.2023.2232446" target="_blank" rel="noopener">"Eliminating Nonmedical Exemptions: A Radical Shift in How Childhood Vaccine Mandates Govern"</a></span>
+                <span class="pub-cat">Vaccine</span><br>
+                <span class="pub-meta">With Attwell. <em>Expert Review of Vaccines</em>, 2023.</span>
+            </li>
+            <li data-cat="vaccine">
+                <span class="pub-title"><a href="https://doi.org/10.1111/1468-0009.12417" target="_blank" rel="noopener">"Mandatory Vaccination: Scope, Sanctions, Severity, Selectivity, and Salience"</a></span>
+                <span class="pub-cat">Vaccine</span><br>
+                <span class="pub-meta">With Attwell. <em>Milbank Quarterly</em>, 2019.</span>
+            </li>
+            <li data-cat="clinical">
+                <span class="pub-title"><a href="https://doi.org/10.1353/pbm.2024.a929023" target="_blank" rel="noopener">"Limits on Parental Discretion in Medical Decision-Making: Pediatric Intervention Principles"</a></span>
+                <span class="pub-cat">Clinical</span><br>
+                <span class="pub-meta">With Wasserman, Diekema, Pope. <em>Perspectives in Biology and Medicine</em>, 2024.</span>
+            </li>
+            <li data-cat="clinical">
+                <span class="pub-title"><a href="https://doi.org/10.1080/15265161.2021.1941423" target="_blank" rel="noopener">"Three Kinds of Decision-Making Capacity for Refusing Medical Interventions"</a></span>
+                <span class="pub-cat">Clinical</span><br>
+                <span class="pub-meta">With Wasserman, Brummett. <em>American Journal of Bioethics</em>, 2022.</span>
+            </li>
+            <li data-cat="clinical">
+                <span class="pub-title"><a href="https://doi.org/10.1016/j.mayocp.2019.08.011" target="_blank" rel="noopener">"Treatment Over Objection — Moral Reasons for Reluctance"</a></span>
+                <span class="pub-cat">Clinical</span><br>
+                <span class="pub-meta">With Wasserman, Haimann. <em>Mayo Clinic Proceedings</em>, 2019.</span>
+            </li>
+            <li data-cat="clinical">
+                <span class="pub-title"><a href="https://doi.org/10.1002/hast.980" target="_blank" rel="noopener">"Capacity for Preferences and Pediatric Assent: Implications for Pediatric Practice"</a></span>
+                <span class="pub-cat">Clinical</span><br>
+                <span class="pub-meta">With Wasserman. <em>Hastings Center Report</em>, 2019.</span>
+            </li>
+            <li data-cat="phil">
+                <span class="pub-title"><a href="https://doi.org/10.1111/japp.12671" target="_blank" rel="noopener">"Reciprocity, Vulnerability, and the Moral Significance of Herd Immunity"</a></span>
+                <span class="pub-cat">Public Health Phil</span><br>
+                <span class="pub-meta">With Bernstein. <em>Journal of Applied Philosophy</em>, 2023.</span>
+            </li>
+            <li data-cat="phil">
+                <span class="pub-title"><a href="https://doi.org/10.1080/15265161.2020.1795528" target="_blank" rel="noopener">"Pox Parties for Grannies? Chickenpox, Exogenous Boosting, and Harmful Injustices"</a></span>
+                <span class="pub-cat">Public Health Phil</span><br>
+                <span class="pub-meta">With Malm. <em>American Journal of Bioethics</em>, 2020.</span>
+            </li>
+            <li data-cat="phil">
+                <span class="pub-title"><a href="https://doi.org/10.5840/soctheorpract201339214" target="_blank" rel="noopener">"Competing Epistemic Spaces: How Social Epistemology Helps Explain and Evaluate Vaccine Denialism"</a></span>
+                <span class="pub-cat">Public Health Phil</span><br>
+                <span class="pub-meta"><em>Social Theory and Practice</em>, 2013.</span>
+            </li>
+            <li data-cat="nursing">
+                <span class="pub-title"><a href="https://doi.org/10.1177/1059840520970886" target="_blank" rel="noopener">"Imperfect Immunization Communication on School District Websites: A Mixed Methods Review"</a></span>
+                <span class="pub-cat">Nursing</span><br>
+                <span class="pub-meta">With Attwell. <em>Journal of School Nursing</em>, 2022.</span>
+            </li>
+            <li data-cat="nursing">
+                <span class="pub-title"><a href="https://doi.org/10.1016/j.outlook.2019.06.014" target="_blank" rel="noopener">"Perspectives of Public Health Nurses on the Ethics of Mandated Vaccine Education"</a></span>
+                <span class="pub-cat">Nursing</span><br>
+                <span class="pub-meta">With Kozak, Deem. <em>Nursing Outlook</em>, 2020.</span>
+            </li>
+            <li data-cat="political">
+                <span class="pub-title"><a href="https://doi.org/10.1080/15027570.2013.818404" target="_blank" rel="noopener">"Sincerity, Accuracy, and Selective Conscientious Objection"</a></span>
+                <span class="pub-cat">Political</span><br>
+                <span class="pub-meta"><em>Journal of Military Ethics</em>, 2013.</span>
+            </li>
+            <li data-cat="political">
+                <span class="pub-title"><a href="https://doi.org/10.1007/s10677-010-9260-9" target="_blank" rel="noopener">"Luck and Oppression"</a></span>
+                <span class="pub-cat">Political</span><br>
+                <span class="pub-meta"><em>Ethical Theory and Moral Practice</em>, 2011.</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ==================== CV ==================== -->
+    <section id="cv">
+        <h2>Curriculum Vitae</h2>
+        <div class="cv-actions">
+            <a href="files/navin-cv.pdf" class="cv-download" download>Download CV (PDF)</a>
+            <a href="files/navin-cv.pdf" target="_blank" rel="noopener">Open in new tab</a>
+        </div>
+        <iframe src="files/navin-cv.pdf" class="cv-embed" title="Mark C. Navin CV"></iframe>
+    </section>
 
 </main>
 
 <footer>
     <div class="container">
         <div class="footer-contact">
-            <a href="/cdn-cgi/l/email-protection#147975667f3a773a7a75627d7a547379757d783a777b79"><span class="__cf_email__" data-cfemail="8fe2eefde4a1eca1e1eef9e6e1cfe8e2eee6e3a1ece0e2">[email&#160;protected]</span></a>
+            <a href="mailto:mark.c.navin@gmail.com">mark.c.navin@gmail.com</a>
         </div>
         <div class="footer-profiles">
             <a href="https://scholar.google.com/citations?user=TUJq7hUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
             <a href="https://philpeople.org/profiles/mark-navin" target="_blank" rel="noopener">PhilPeople</a>
             <a href="https://orcid.org/0000-0002-8511-6517" target="_blank" rel="noopener">ORCID</a>
-            <a href="https://w
+            <a href="https://www.researchgate.net/profile/Mark-Navin" target="_blank" rel="noopener">ResearchGate</a>
+            <a href="https://www.linkedin.com/in/mark-navin-7325602b2/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Publications filter
+(function() {
+    var buttons = document.querySelectorAll('.pub-filter');
+    var items = document.querySelectorAll('#pub-list > li');
+    buttons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var cat = btn.getAttribute('data-cat');
+            buttons.forEach(function(b) { b.classList.remove('is-active'); });
+            btn.classList.add('is-active');
+            items.forEach(function(li) {
+                if (cat === 'all' || li.getAttribute('data-cat') === cat) {
+                    li.classList.remove('is-hidden');
+                } else {
+                    li.classList.add('is-hidden');
+                }
+            });
+        });
+    });
+})();
+
+// Active-section highlighting in nav + show nav-name once user scrolls past hero
+(function() {
+    var sections = ['about', 'speaking', 'research', 'cv'];
+    var links = {};
+    sections.forEach(function(id) {
+        var l = document.querySelector('.nav-links a[href="#' + id + '"]');
+        if (l) links[id] = l;
+    });
+    var hero = document.getElementById('about');
+    var heroBottom = hero ? hero.offsetTop + hero.offsetHeight - 80 : 200;
+    function update() {
+        var pos = window.scrollY + 90;
+        var current = sections[0];
+        sections.forEach(function(id) {
+            var el = document.getElementById(id);
+            if (el && el.offsetTop <= pos) current = id;
+        });
+        Object.keys(links).forEach(function(id) {
+            links[id].classList.toggle('active', id === current);
+        });
+        document.body.classList.toggle('has-scrolled', window.scrollY > heroBottom);
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', function() {
+        heroBottom = hero ? hero.offsetTop + hero.offsetHeight - 80 : 200;
+    });
+    update();
+})();
+</script>
+
+</body>
+</html>
